@@ -98,3 +98,6 @@ Meteor.startup(function () {
     console.log(error.message);
   }
 });
+
+// Required for natestrauser:font-awesome package if browser-policy package is installed
+// BrowserPolicy.content.allowOriginForAll('*.bootstrapcdn.com');
