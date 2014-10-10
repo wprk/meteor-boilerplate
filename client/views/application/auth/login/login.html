@@ -25,36 +25,36 @@
 				<span>or use your email</span>
 			</div>
 			
-			<form class="form-horizontal" action="#" method="post">
+			<div class="login-form">
+				<form class="form-horizontal" action="#" method="post">
 				
-				<div class="login-form">
-					<fieldset>
-						<p class="controls">
-							<div class="input-group col-xs-12">	
-								<input type="text" class="form-control" id="username" placeholder="Username or E-mail"/>
-								<span class="input-group-addon"><i class="fa fa-user"></i></span>
-							</div>	
-						</p>
-						
-						<p class="controls">
-							<div class="input-group col-xs-12">	
-								<input type="password" class="form-control" id="password" placeholder="Password"/>
-								<span class="input-group-addon"><i class="fa fa-key"></i></span>
-							</div>	
-						</p>
-						
-					</fieldset>
+				<fieldset>
+					<p class="controls">
+						<div class="input-group col-xs-12">	
+							<input type="text" class="form-control" id="username" placeholder="Username or E-mail"/>
+							<span class="input-group-addon"><i class="fa fa-user"></i></span>
+						</div>	
+					</p>
+					
+					<p class="controls">
+						<div class="input-group col-xs-12">	
+							<input type="password" class="form-control" id="password" placeholder="Password"/>
+							<span class="input-group-addon"><i class="fa fa-key"></i></span>
+						</div>	
+					</p>
 					
 					<div>
 						<button id="login" type="submit" class="btn btn-lg btn-primary col-xs-12">Login</button>
 					</div>
-				</div>
+					
+				</fieldset>
 				
-			</form>
+				</form>
+			</div>
 			
 			<div class="clearfix"></div>
 
-			<!-- <a class="pull-left" href="#">Forgot Password?</a> -->
+			<a class="pull-left" href="{{pathFor 'forgotPassword'}}">Forgot Password?</a>
 			<a class="pull-right" href="{{pathFor 'registration'}}">Sign Up!</a>
 			
 		</div>

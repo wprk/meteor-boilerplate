@@ -1,21 +1,26 @@
 <template name="registration">
-  <!-- Start of Account Registration -->
   <div class="row">
-    <div class="login-box">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0 col-md-8 col-md-offset-2 login-box">
       <div class="header">
         Create an Account
       </div>
       
-        {{> form_registration}}	
+      {{> form_registration}} 
+      
+      <div class="text-with-hr">
+          <span>or use a social network account</span>
+      </div>
       
       <p>
         <a id="registerWithFacebook" class="btn btn-facebook"><span>Register via Facebook</span></a>
-      </p>		
+      </p>
       
       <p>
         <a id="registerWithGoogle" class="btn btn-google"><span>Register via Google</span></a>
-      </p>		
-
+      </p>
+      
+      <div class="clearfix"></div>
+      
     </div>
   </div><!--/row-->
 </template>
