@@ -25,6 +25,32 @@ Template.login.events({
 });
 
 Template.login.events({
+  "click #loginWithTwitter": function (event) {
+    event.preventDefault();
+    Meteor.loginWithTwitter({
+
+    }, function(error) {
+        if (error) {
+            console.log(error);
+        }
+    });
+  }
+});
+
+Template.login.events({
+  "click #loginWithGithub": function (event) {
+    event.preventDefault();
+    Meteor.loginWithGithub({
+
+    }, function(error) {
+        if (error) {
+            console.log(error);
+        }
+    });
+  }
+});
+
+Template.login.events({
   "click #login": function (e) {
     e.preventDefault();
     
