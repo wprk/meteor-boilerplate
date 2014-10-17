@@ -1,5 +1,12 @@
+// Hacky fix to keepalive error v.0.9.4
+process.argv = _.without(process.argv, '--keepalive');
+Meteor.startup(function () { console.log("LISTENING"); });
+
+// Enable to debug schemas
+SimpleSchema.debug = true
+
 Meteor.startup(function () {
-  //process.env.MAIL_URL="smtp://wprk14%40gmail.com:peterGRUBB14!!@smtp.gmail.com:465/";
+  process.env.MAIL_URL="smtp://wprk14%40gmail.com:peterGRUBB14!!@smtp.gmail.com:465/";
   
   var siteName = 'Site Name';
   var siteDomain = 'domainname.co.uk';

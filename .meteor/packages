@@ -14,13 +14,12 @@ accounts-github
 service-configuration
 oauth
 alanning:roles
-lezed1:bootstrap-errors
 jquery
 aldeed:autoform
-aldeed:collection2
 accounts-base
 cwaring:modernizr
 nemo64:bootstrap
 less
 natestrauser:font-awesome
-
+aldeed:collection2
+mrt:bootstrap-alerts

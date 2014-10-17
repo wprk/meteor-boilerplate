@@ -1,4 +1,56 @@
 Template.registration.events({
+  "click #registerWithFacebook": function (event) {
+    event.preventDefault();
+    Meteor.loginWithFacebook({
+
+    }, function(error) {
+        if (error) {
+            console.log(error);
+        }
+    });
+  }
+});
+
+Template.registration.events({
+  "click #registerWithGoogle": function (event) {
+    event.preventDefault();
+    Meteor.loginWithGoogle({
+
+    }, function(error) {
+        if (error) {
+            console.log(error);
+        }
+    });
+  }
+});
+
+Template.registration.events({
+  "click #registerWithTwitter": function (event) {
+    event.preventDefault();
+    Meteor.loginWithTwitter({
+
+    }, function(error) {
+        if (error) {
+            console.log(error);
+        }
+    });
+  }
+});
+
+Template.registration.events({
+  "click #registerWithGithub": function (event) {
+    event.preventDefault();
+    Meteor.loginWithGithub({
+
+    }, function(error) {
+        if (error) {
+            console.log(error);
+        }
+    });
+  }
+});
+
+Template.registration.events({
   "click #register": function (event) {
     event.preventDefault();
 

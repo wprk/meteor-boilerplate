@@ -3,9 +3,10 @@
         <!-- Start of Main Template -->
         {{> yield 'header'}}
         <div class="container">
+            {{> bootstrapAlerts}}
             <div class="row">
                 {{> yield 'sidebarLeft'}}
-                <div id="content" class="col-12">
+                <div class="col-12 main_content">
                     {{> yield}}
                 </div>
             </div>

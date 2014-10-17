@@ -28,7 +28,7 @@ Template.login.events({
   "click #loginWithTwitter": function (event) {
     event.preventDefault();
     Meteor.loginWithTwitter({
-
+      requestPermissions: []
     }, function(error) {
         if (error) {
             console.log(error);
@@ -59,7 +59,7 @@ Template.login.events({
     
     Meteor.loginWithPassword(username, password, function(error) {
         if (error) {
-            Errors.throw('danger', error);
+            Alerts.add(error, 'danger');
             Router.go('login');
         }
     });
